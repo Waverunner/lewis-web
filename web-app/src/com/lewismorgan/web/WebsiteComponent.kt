@@ -151,15 +151,22 @@ class WebsiteComponent : RComponent<RProps, RState>() {
     footer("footer text-center") {
       div("container") {
         div("row justify-content-md-center") {
-          div("col") {
+          div("col-md-6") {
             h4 { +"Location" }
             p { +"Tampa, Florida" }
           }
-          div("col") {
+          div("col-md-6") {
             h4 { +"Social" }
             ul("list-inline") {
-              li("list-inline-item") { +"Facebook" }
-              li("list-inline-item") { +"Twitter" }
+              li("list-inline-item") {
+                fontAwesome("facebook-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
+              }
+              li("list-inline-item") {
+                fontAwesome("twitter-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
+              }
+              li("list-inline-item") {
+                fontAwesome("linkedin", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
+              }
             }
           }
         }
