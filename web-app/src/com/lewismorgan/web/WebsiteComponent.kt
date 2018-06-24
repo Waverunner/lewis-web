@@ -13,6 +13,7 @@ import react.RBuilder
 import react.RComponent
 import react.RProps
 import react.RState
+import react.dom.a
 import react.dom.div
 import react.dom.footer
 import react.dom.h1
@@ -57,8 +58,19 @@ class WebsiteComponent : RComponent<RProps, RState>() {
     renderFooter()
     div("copyright text-center py-4 bg-dark text-white") {
       div("container") {
-        small {
-          +"Copyright © Lewis Morgan 2018. Source is available on GitHub."
+        small("footer-notes") {
+          span {
+            +"Copyright "
+          }
+          fontAwesome("copyright", FontAwesomeStyleType.REGULAR, FontAwesomeSize.XS)
+          span {
+            +" Lewis Morgan 2018. Source code is available on "
+          }
+          a("https://github.com/lewismorgan/lewisjmorgan") {
+            +"GitHub"
+          }
+          span { +" " }
+          fontAwesome("github", FontAwesomeStyleType.BRAND, FontAwesomeSize.DEFAULT, "fa-fw") {}
         }
       }
     }

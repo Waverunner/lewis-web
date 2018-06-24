@@ -23,6 +23,7 @@
     "simple-icons": "^1.6.2"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
     "npm-check": "^5.7.1"
   },
   "scripts": {

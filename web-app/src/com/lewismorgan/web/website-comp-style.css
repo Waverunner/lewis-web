@@ -47,6 +47,10 @@
   background-color: whitesmoke !important;
 }
 
+.footer-notes a {
+  color: inherit;
+}
+
 /* CAROUSEL
 -------------------------------------------------- */
 
