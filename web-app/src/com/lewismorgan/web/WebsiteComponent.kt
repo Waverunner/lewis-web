@@ -9,16 +9,20 @@ import com.lewismorgan.web.bootstrap.nav.navbarBranding
 import com.lewismorgan.web.bootstrap.nav.navbarCollapsible
 import com.lewismorgan.web.bootstrap.nav.navbarToggler
 import com.lewismorgan.web.bootstrap.nav.navigationItem
+import kotlinx.html.DIV
 import react.RBuilder
 import react.RComponent
 import react.RProps
 import react.RState
+import react.dom.RDOMBuilder
 import react.dom.a
 import react.dom.div
 import react.dom.footer
 import react.dom.h1
 import react.dom.h2
+import react.dom.h3
 import react.dom.h4
+import react.dom.hr
 import react.dom.header
 import react.dom.li
 import react.dom.p
@@ -95,7 +99,20 @@ class WebsiteComponent : RComponent<RProps, RState>() {
     header("masthead bg-primary text-center") {
       div("container") {
         h1 { +"Lewis Morgan" }
-        h2 { +"> Eat. > Sleep. > Code." }
+        div("container m-2") {
+          div("m-2") {
+            fontAwesome("laptop", FontAwesomeStyleType.SOLID, FontAwesomeSize.X3)
+          }
+          h3 {
+            fontAwesome("terminal", FontAwesomeStyleType.SOLID)
+            span {
+              +" sudo rm -rf /"
+            }
+          }
+        }
+        h4 {
+          +"Student - Developer - Star Wars Fanatic"
+        }
       }
     }
   }
@@ -156,20 +173,24 @@ class WebsiteComponent : RComponent<RProps, RState>() {
             p { +"Tampa, Florida" }
           }
           div("col-md-6") {
-            h4 { +"Social" }
-            ul("list-inline") {
-              li("list-inline-item") {
-                fontAwesome("facebook-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
-              }
-              li("list-inline-item") {
-                fontAwesome("twitter-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
-              }
-              li("list-inline-item") {
-                fontAwesome("linkedin", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
-              }
-            }
+            renderSocial()
           }
         }
+      }
+    }
+  }
+
+  private fun RDOMBuilder<DIV>.renderSocial() {
+    h4 { +"Social" }
+    ul("list-inline") {
+      li("list-inline-item") {
+        fontAwesome("facebook-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
+      }
+      li("list-inline-item") {
+        fontAwesome("twitter-square", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
+      }
+      li("list-inline-item") {
+        fontAwesome("linkedin", FontAwesomeStyleType.BRAND, FontAwesomeSize.X2)
       }
     }
   }
