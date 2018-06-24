@@ -1,14 +1,14 @@
 package com.lewismorgan.web
 
-import com.lewismorgan.web.bootstrap.components.carousel.carousel
-import com.lewismorgan.web.bootstrap.components.carousel.carouselCaption
-import com.lewismorgan.web.bootstrap.components.carousel.carouselItem
-import com.lewismorgan.web.bootstrap.components.nav.navComponent
-import com.lewismorgan.web.bootstrap.components.nav.navbar
-import com.lewismorgan.web.bootstrap.components.nav.navbarBranding
-import com.lewismorgan.web.bootstrap.components.nav.navbarCollapsible
-import com.lewismorgan.web.bootstrap.components.nav.navbarToggler
-import com.lewismorgan.web.bootstrap.components.nav.navigationItem
+import com.lewismorgan.web.bootstrap.carousel.carousel
+import com.lewismorgan.web.bootstrap.carousel.carouselCaption
+import com.lewismorgan.web.bootstrap.carousel.carouselItem
+import com.lewismorgan.web.bootstrap.nav.navComponent
+import com.lewismorgan.web.bootstrap.nav.navbar
+import com.lewismorgan.web.bootstrap.nav.navbarBranding
+import com.lewismorgan.web.bootstrap.nav.navbarCollapsible
+import com.lewismorgan.web.bootstrap.nav.navbarToggler
+import com.lewismorgan.web.bootstrap.nav.navigationItem
 import react.RBuilder
 import react.RComponent
 import react.RProps

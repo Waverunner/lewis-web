@@ -1,4 +1,4 @@
-package com.lewismorgan.web.bootstrap.components
+package com.lewismorgan.web.bootstrap
 
 import kotlinx.html.ButtonType
 import kotlinx.html.classes

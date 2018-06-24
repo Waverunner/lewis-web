@@ -1,4 +1,4 @@
-package com.lewismorgan.web.bootstrap.components.nav
+package com.lewismorgan.web.bootstrap.nav
 
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.role

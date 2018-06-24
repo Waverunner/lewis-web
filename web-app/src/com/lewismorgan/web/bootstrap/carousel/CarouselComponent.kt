@@ -1,4 +1,4 @@
-package com.lewismorgan.web.bootstrap.components.carousel
+package com.lewismorgan.web.bootstrap.carousel
 
 import com.lewismorgan.web.misc.getChildren
 import kotlinx.html.A

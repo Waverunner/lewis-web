@@ -1,4 +1,4 @@
-package com.lewismorgan.web.bootstrap.components.nav
+package com.lewismorgan.web.bootstrap.nav
 
 import kotlinx.html.BUTTON
 import kotlinx.html.attributesMapOf
