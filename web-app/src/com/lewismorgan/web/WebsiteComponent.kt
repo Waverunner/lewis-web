@@ -30,6 +30,15 @@ import react.dom.ul
 class WebsiteComponent : RComponent<RProps, RState>() {
   override fun RBuilder.render() {
     // Navigation
+    renderNavbar()
+    renderHeader()
+    // the main contents for website
+    renderSections()
+    renderFooter()
+    renderCopyright()
+  }
+
+  private fun RBuilder.renderNavbar() {
     navbar("navbar-expand-lg navbar-dark fixed-top bg-dark", true) {
       div("container") {
         navbarBranding("#Home") { +"Don't Get Lost -->" }
@@ -52,10 +61,9 @@ class WebsiteComponent : RComponent<RProps, RState>() {
         }
       }
     }
-    renderHeader()
-    // the main contents for website
-    renderSections()
-    renderFooter()
+  }
+
+  private fun RBuilder.renderCopyright() {
     div("copyright text-center py-4 bg-dark text-white") {
       div("container") {
         small("footer-notes") {
