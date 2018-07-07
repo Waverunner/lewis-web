@@ -55,7 +55,7 @@ class NavbarComponent(props: NavbarProps) : RComponent<NavbarProps, NavbarState>
   override fun RBuilder.render() {
     nav("navbar ${props.navbarStyle}") {
       attrs.role = "navigation"
-      if (state.minimized) {
+      if (props.shrink && state.minimized) {
         attrs.classes += "navbar-shrink"
       }
       children()

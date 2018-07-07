@@ -53,6 +53,20 @@ header.masthead {
   font-size: 1.25rem
 }
 
+.floating-item-container {
+  position: fixed;
+  z-index: 9999;
+}
+
+.jump-top-nav-btn {
+  position: inherit;
+  bottom: 5rem;
+  right: 1rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: large;
+}
+
 .list-stack-item {
 
 }

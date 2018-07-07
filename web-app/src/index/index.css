@@ -26,3 +26,8 @@
 .social-icon-anim:hover {
   transform: scale(1.25);
 }
+
+.btn-outline-light {
+  border-color: black;
+  color: black;
+}

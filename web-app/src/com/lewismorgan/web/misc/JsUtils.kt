@@ -1,5 +1,6 @@
 package com.lewismorgan.web.misc
 
+import org.w3c.dom.Document
 import org.w3c.dom.events.Event
 import react.RBuilder
 import react.RComponent
@@ -56,4 +57,11 @@ fun RBuilder.navHashLink(to: String, onClick: (Event) -> Unit,
     this.smooth = true
   }
   handler.invoke(this)
+}
+
+fun getDocHeight(document: Document): Int {
+  return listOf(
+      document.body!!.clientHeight,
+      document.body!!.offsetHeight, document.documentElement!!.clientHeight,
+      document.body!!.scrollHeight, document.documentElement!!.scrollHeight).max()!!
 }
