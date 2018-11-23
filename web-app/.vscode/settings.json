@@ -8,7 +8,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/src/stylesheets"
+      "savePath": "/public/css"
     }
   ],
   "liveSassCompile.settings.autoprefix": [

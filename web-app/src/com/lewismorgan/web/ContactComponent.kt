@@ -17,7 +17,9 @@ class ContactComponent : RComponent<RProps, RState>() {
     container {
       attrs.classes += "twitter-feed"
       twitterTimelineEmbedded {
-        attrs.sourceType = "profile"
+        attrs.noFooter = true
+        attrs.autoHeight = true
+        attrs.sourceType = "widget"
         attrs.screenName = "TheLewisMorgan"
       }
     }
